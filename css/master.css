@@ -1,25 +1,43 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* COMMON */
 [class*="col-"] {
   height: 60px;
   border: 1px solid black;
 }
 
+/* INTESTAZIONE HELBIZ */
+.first-section {
+  background-image: url('img/header.jpg');
+}
+
+/* logo  */
 .first-section .col-3 img {
   height: 20px;
 }
 
+/* nav bar */
 .col-7 nav ul li {
   display: inline-block;
   float: left;
   margin-left: 10px;
 }
-
+/* lingue */
 [class*="lang"] {
   float: left;
   margin-left: 10px;
+}
+
+/* container immagine */
+.container.bg-img {
+  max-width: 100%;
+  background-image: url('../img/header.jpg');
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
