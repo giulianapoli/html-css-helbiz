@@ -11,7 +11,6 @@
 
 /* COMMON */
 [class*="col-"] {
-  height: 60px;
   border: 1px solid black;
 }
 
@@ -35,16 +34,44 @@
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
+/* elementi container immagine */
+
+.col-lg-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col-6.icons {
+  position: relative;
+}
+
+.icons .app-store,
+.icons .google-play {
+  position: absolute;
+  max-width: 100%;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.icons .app-store {
+  left: 150px;
+}
+
+.icons .google-play {
+  right: 150px;
+}
 
 
 
 @media screen and (min-width: 1201px) {
   /* logo */
   .first-section .col-lg-3 img {
-    height: 20px;
+
+    height: 10px;
   }
 
   /* nav bar */
@@ -54,7 +81,7 @@
     margin-left: 10px;
   }
 
-  .container.bg-img .col-lg-4 {
+  .container.bg-img .col-lg-5 {
     position: relative;
     color: white;
     text-align: center;
