@@ -15,15 +15,15 @@
       <div class="container">
 
         <!-- logo -->
-        <div class="bar col-3 col-lg-3">
+        <div class="bar col-3 col-lg-3 col-md-3">
           <img src="img/logo.svg" alt="HELBIZ">
         </div>
 
         <!-- barra navigazione -->
-        <div class="bar col-7 col-lg-7">
-          <div class="col-offset-5"></div>
+        <div class="bar col-7 col-lg-7 col-md-9 ">
+          <div class="col-offset-5 display-none-md display-none-xs"></div>
           <nav>
-            <ul>
+            <ul class="display-none-md display-none-xs">
               <li>helbizgo</li>
               <li>helbizcar</li>
               <li>helbizair</li>
@@ -32,11 +32,16 @@
               <li>career</li>
               <li>shop</li>
             </ul>
+            <div class="col-md-1">
+              <img class="fas fa-bars fa-3x" src="../img/bars-solid.svg">
+            </div>
           </nav>
+
         </div>
 
+
         <!-- lingue -->
-        <div class="bar col-2 col-lg-2">
+        <div class="bar col-2 col-lg-2 display-none-md display-none-xs">
           <div class="lang-1">
             eng
           </div>
@@ -51,9 +56,11 @@
 
       <!-- container immagine -->
       <div class="container bg-img">
-        <div class="col-5 col-lg-5">
-          <h1>Shared Mobility of Tomorrow</h1>
-          <h6>Bringing the future of shared mobility to the streets of the world</h6>
+        <div class="col-9 col-lg-9">
+          <h1 class="b-title">Shared Mobility of Tomorrow</h1>
+          <h5 class="s-title">Bringing the future of shared mobility to the streets of the world</h5>
+        </div>
+        <div class="col-9 col-lg-9 stores">
           <img class="app-store" src="img/app-store.svg" alt="app-store">
           <img class="google-play" src="img/google-play.svg" alt="google-play">
         </div>

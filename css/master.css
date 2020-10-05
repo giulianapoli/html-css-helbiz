@@ -51,8 +51,8 @@
 
 /* elementi container immagine */
 
-.col-lg-5 {
-  position: absolute;
+.col-lg-9 {
+  position: relative;
   color: white;
   text-align: center;
   top: 50%;
@@ -60,19 +60,21 @@
   transform: translate(-50%, -50%);
 }
 
+.b-title {
+  font-size: 40px;
+}
+
+.s-title {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
 .app-store,
 .google-play {
   display: inline-block;
   margin-top: 20px;
   width: 120px;
-}
-
-.icons .app-store {
-  left: 150px;
-}
-
-.icons .google-play {
-  right: 150px;
 }
 
 
@@ -102,13 +104,39 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .bar {
-    height: 40px;
-    text-transform: uppercase;
-    font-size: 10px;
-    line-height: 40px;
-    vertical-align: middle;
+
+  /* logo burger non riuscito */
+  .bar .col-md-1 {
+    background-color: blue;
+    float: right;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  /* logo burger non riuscito */
+  .bar .col-md-1 {
+    background-color: blue;
+    float: right;
+  }
+
+  .stores {
+    position: relative;
+  }
+
+  .app-store,
+  .google-play {
+    display: inline-block;
+    margin-top: 20px;
+    width: 120px;
+  }
+
+  .app-store {
+    float: left;
+  }
+
+  .google-play {
+    float: right;
+  }
 
 }
